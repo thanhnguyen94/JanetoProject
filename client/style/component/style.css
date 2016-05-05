@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.row-fluid {
+  width: 100%;
+}
+#scrollArea{
+	height: 400px;
+  overflow: auto;
+}
+#bottomDiv{
+	display: block;
+}
+#bottomUl{
+	display: block;
+  	margin-top: 400px;
+}
+.media-margin{
+	margin-right: 0px;
+	margin-left: 0px;
+}

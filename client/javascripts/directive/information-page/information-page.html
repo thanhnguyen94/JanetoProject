@@ -1,0 +1,177 @@
+<div class="panel panel-green">
+    <div class="panel-heading">Information</div>
+    <div class="panel-body pan">
+        <!-- <div class='row'> -->
+        <!-- <div class="col-md-6 col-xs-6 col-md-offset-3 col-xs-offset-3"> -->
+        <form class="form">
+            <div class="col-md-6 form-group">
+                <label ng-show="true" for="inputName" class="control-label">ID</label>
+
+                <div class="input-icon right"><i class="fa fa-user"></i>
+                    <input ng-readonly="true" ng-model="vm.infor.Id" id="inputName" type="text" value="{{vm.infor.Id}}" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="inputName" class="control-label">Name</label>
+
+                <div class="input-icon right"><i class="fa fa-user"></i>
+                    <input ng-readonly="true" ng-model="vm.infor.UserName" id="inputName" type="text" value="{{vm.infor.UserName}}" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="inputEmail" class="control-label">E-mail</label>
+
+                <div class="input-icon right"><i class="fa fa-envelope"></i>
+                    <input ng-readonly="true" ng-model="vm.infor.Email" id="inputEmail" type="text" value="{{vm.infor.Email}}" class="form-control" />
+                </div>
+            </div>
+            <div ng-show="vm.infor.password" class="col-md-6 form-group">
+                <label for="inputPassword" class="control-label">Password</label>
+                <div class="input-icon right"><i class="fa fa-key"></i>
+                    <input ng-model="vm.infor.Password" id="inputPassword" type="password" value="******" class="form-control" />
+                </div>
+            </div>
+            <div ng-show="vm.infor.password" class="col-md-6 form-group">
+                <label for="inputRepassword" class="control-label">RePassword</label>
+
+                <div class="input-icon right"><i class="fa fa-key"></i>
+                    <input ng-model="vm.infor.repass" id="inputRepassword" type="password" value="******" class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label ng-show="true" for="inputFirstName" class="control-label">First Name</label>
+
+                <div class="input-icon right"><i class="fa fa-pencil-square-o"></i>
+                    <input ng-model="vm.infor.FirstName" id="inputFirstName" type="text" value="{{vm.infor.FirstName}}" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="inputLastName" class="control-label">Last Name</label>
+
+                <div class="input-icon right"><i class="fa fa-pencil-square-o"></i>
+                    <input ng-model="vm.infor.LastName" id="inputLastName" type="text" value="{{vm.infor.LastName}}" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <label for="inputPhoneNumber" class="control-label">Phone Number</label>
+
+                <div class="input-icon right"><i class="fa fa-pencil-square-o"></i>
+                    <input ng-model="vm.infor.PhoneNumber" id="inputPhoneNumber" type="text" value="{{vm.infor.PhoneNumber}}" class="form-control" />
+                </div>
+            </div>
+
+
+            <div class="col-md-6 form-group mbn">
+
+                <label>
+                    <input ng-model="check" type="checkbox" />&nbsp; Send password to my e-mail address
+                </label>
+
+
+                <!--<button ng-show="check" type="submit" class="btn btn-primary">&nbsp; Send Password</button>-->
+            </div>
+            <div class="col-md-6 form-group">
+                <div class="button">
+                    <button ng-disabled="actionDisable()" ng-click="vm.actionSave()"
+                    type="submit" class="btn btn-primary">Save {{vm.actionSend(check)}}</button>
+                    <button ng-click="vm.actionDelete()" type="submit" class="btn btn-primary">Delete</button>
+                    <button ng-click="vm.actionCancel()" type="submit" class="btn btn-primary">Cancel</button>
+                </div>
+            </div>
+        </form>
+        <!--     </div> -->
+
+        <!-- </div> -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<form class="form" action="#">
+    <div class="form-body pal">
+     <div class="row">
+      <div class="col-md-6 col-xs-6">
+
+       <div class="form-group">
+        <label for="inputName" class="control-label">Name</label>
+
+        <div class="input-icon right"><i class="fa fa-user"></i>
+         <input ng-model="vm.infor.username" id="inputName" type="text" placeholder="{{vm.infor.username}}" class="form-control" />
+        </div>
+       </div>
+      </div>
+      <div class="col-md-6 col-xs-6">
+       <div class="form-group">
+        <label for="inputEmail" class="control-label">E-mail</label>
+
+        <div class="input-icon right"><i class="fa fa-envelope"></i>
+         <input ng-model="vm.infor.email" id="inputEmail" type="text" placeholder="{{vm.infor.email}}" class="form-control" />
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-6 col-xs-6">
+      <div class="form-group">
+       <label for="inputPassword" class="control-label">Password</label>
+       <div class="input-icon right"><i class="fa fa-tag"></i>
+        <input ng-model="vm.infor.password" id="inputPassword" type="password" placeholder="******" class="form-control" />
+       </div>
+      </div>
+     </div>
+     <div class="col-md-6 col-xs-6">
+      <div class="form-group">
+       <label for="inputRepassword" class="control-label">RePassword</label>
+
+       <div class="input-icon right"><i class="fa fa-tag"></i>
+        <input ng-model="vm.infor.repassword" id="inputRepassword" type="password" placeholder="******" class="form-control" />
+       </div>
+      </div>
+     </div>
+
+     <div class="col-md-6 col-xs-6">
+      <div class="form-group mbn">
+       <p>
+        <div class="checkbox">
+         <label>
+          <input ng-model="check" tabindex="1" type="checkbox" />&nbsp; Send password to my e-mail address
+         </label>
+
+        </div>
+        <button ng-show="check" type="submit" class="btn btn-primary">&nbsp; Send Password</button>
+       </p>
+      </div>
+     </div>
+     <div class="col-md-6 col-xs-6 button">
+      <div class="form-group">
+       <div class="button">
+        <button ng-show="vm.infor.username && vm.infor.email && vm.infor.password" ng-click="vm.actionSave()" type="submit" class="btn btn-primary">Save</button>
+        <button ng-click="vm.actionDelete()" type="submit" class="btn btn-primary">Delete</button>
+        <button ng-click="vm.actionCancel()" type="submit" class="btn btn-primary">Cancel</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </form>-->
+<!--</div>
+</div>
+</div>-->

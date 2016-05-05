@@ -1,0 +1,41 @@
+{
+  "name": "training-tool",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "node ./app"
+  },
+  "dependencies": {
+    "bower": "^1.5.2",
+    "connect-multiparty": "~2.0.0",
+    "debug": "~2.2.0",
+    "eslint": "~0.24.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-exec": "^2.1.2",
+    "gulp-exit": "0.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "wiredep": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-apidoc": "^0.2.2",
+    "gulp-copy": "0.0.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-eslint": "^1.1.1",
+    "gulp-exec": "^2.1.2",
+    "gulp-inject": "^3.0.0",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-minify": "0.0.5",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-node-inspector": "^0.1.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-live-server": "^0.0.28"
+  }
+}

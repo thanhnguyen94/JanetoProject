@@ -1,0 +1,39 @@
+.popup-header {
+    padding-bottom: 0 !important;
+}
+
+.popup-body {
+    padding: 0 !important;
+}
+
+.popup-body-title {
+    padding: 0;
+    margin: 10px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.popup-body-content {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.content-key {
+    float: left;
+}
+
+.content-value {
+    padding-left: 120px;
+    font-weight: bold;
+}
+
+.popup-reason label {
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.popup-reason input {
+    width: 580px;
+    margin: 10px;
+    margin-top: 0;
+}

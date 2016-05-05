@@ -1,0 +1,14 @@
+.panel.panel-green {
+    border-color: #488c6c !important;
+    padding-top: 10px !important;
+    padding-left: 20px !important;
+    height: 100% !important;
+}
+@media (max-width:768){
+   
+.panel.panel-green {    border-color: #488c6c !important;
+    padding-top: 10px !important;
+    padding-left: 20px !important;
+    height: 100% !important;
+}
+}

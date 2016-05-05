@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Name": "English",
+    "Description": "Khóa học tiếng anh",
+    "IsApproved": true
+  },
+
+  {
+    "Id": 2,
+    "Name": "Toán",
+    "Description": "Toán học cơ bản",
+    "IsApproved": true
+  }
+
+]

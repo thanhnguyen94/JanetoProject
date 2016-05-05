@@ -1,0 +1,57 @@
+{
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "angular": true,
+        "app":true,
+        "d3":true,
+        "$":true,
+        "_":true,
+        "document":true,
+        "window": true,
+        "toastr": true,
+        "jsPlumb": true,
+        "Snap": true,
+        "Bloodhound": true,
+        "required":true,
+        "emit":true,
+        "FileReader":true,
+        "Image":true,
+        "moment":true,
+        "emotify":true,
+        "io":true,
+        "wrapper":true,
+        "Notification":true
+    },
+    "rules": {
+        "strict": [ 0, "global" ],
+        "eqeqeq": [ 1, "smart" ],
+        "quotes": [ 1, "single"],
+        "camelcase": [1, {"properties": "never"}],
+        "no-underscore-dangle": 0,
+        "no-use-before-define": [2, "nofunc"],
+        "indent": [ 1, 4 ],
+        "semi": [ 1, "always" ],
+        "eol-last": [ 1 ],
+        "comma-spacing": [ 2 ],
+        "handle-callback-err": [ 2 ],
+        "no-shadow": [ 2 ],
+        "no-unused-vars": [ 2 ],
+        "no-undef": [ 2 ],
+        "curly": [ 2 ],
+        "new-cap": [ 2 , {"capIsNewExceptions": ["Router"]}],
+        "no-multi-spaces": [ 2 ],
+        "key-spacing": [ 2 ],
+        "comma-dangle": [ 2 ],
+        "space-infix-ops": [ 2 ],
+        "space-after-keywords": [ 2 ],
+        "curly": [ 2 ],
+        "brace-style": [ 2 ],
+        "no-path-concat": [ 2 ],
+        "no-mixed-spaces-and-tabs": [ 2 ]
+    },
+    "ecmaFeatures": {
+        "blockBindings": true
+    }
+}

@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'helveticaneueRegular';
+    src: url('../../font/helveticaneue/helveticaneue.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneueBold';
+    src: url('../../font/helveticaneue/helveticaneuebold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneueLight';
+    src: url('../../font/helveticaneue/helveticaneuelight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneueMedium';
+    src: url('../../font/helveticaneue/helveticaneuemedium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+html body {
+    height: 100%
+}
+
+body {
+    background-color: #FCFAFB;
+    color: #222222;
+    font-family: helveticaneueRegular, Helvetica;
+    font-size: 14px;
+    line-height: 1.42857;
+    overflow: hidden;
+    height: 100%;
+}
+
+.dl-hide {
+    display: none;
+}
+
+.dl-show {
+    display: block;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+
+.fl-clear {
+    clear: both;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.padding-left-0 {
+    padding-left: 0;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}
+
+.padding-right-0 {
+    padding-right: 0;
+}
+
+.padding-top-0 {
+    padding-top: 0;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-left-0 {
+    margin-left: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-right-0 {
+    margin-right: 0;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+#ui-view {
+    width: 100%;
+}
+
+.fuzzy {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+}
+
+.input-bordered {
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #515D70;
+    width: 270px;
+    background: transparent;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #515D70;
+    position: relative;
+}
+
+.input-bordered input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-bordered input:focus {
+    border: none;
+    outline: none;
+}
+
+.input-bordered.error {
+    border: 1px solid #E83D35;
+}
+
+.input-bordered.success {
+    border: 1px solid #7ABA45;
+}
+
+.button-bordered {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.button-bordered:focus,
+.button-bordered:active,
+.button-bordered:hover {
+    outline: none !important;
+    outline: 0!important;
+}
+
+.dsm-error-tooltip {
+    display: inline-block;
+    position: absolute;
+    top: -28px;
+    right: 15px;
+}
+
+.dsm-error-tooltip {
+    font-size: 12px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 15px;
+    background-color: #E83D35;
+    color: #ffffff;
+    position: relative;
+}
+
+.input-error-arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #E83D35;
+    position: absolute;
+    right: 20px;
+    bottom: -5px;
+}
+
+.input-underline {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #515D70;
+    background: #ECF0F1;
+    padding-left: 5px;
+    padding-right: 40px;
+    color: #515D70;
+    position: relative;
+}
+
+.input-underline input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-underline input:focus {
+    border: none;
+    outline: none;
+}
+
+.input-underline.error {
+    border-bottom: 1px solid #E83D35;
+}
+
+.input-underline.success {
+    border-bottom: 1px solid #7ABA45;
+}
+
+.div-underline {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #515D70;
+    background: transparent;
+    padding-left: 5px;
+    padding-right: 40px;
+    padding-top: 10px;
+    color: #515D70;
+    position: relative;
+    font-style: italic;
+}

@@ -1,0 +1,497 @@
+/* ------------- LOGIN PAGE --- START ---- */
+.login ::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.login :-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;
+}
+
+.login ::-moz-placeholder {  /* Firefox 19+ */
+    color: #ffffff;
+}
+
+.login :-ms-input-placeholder {
+    color: #ffffff;
+}
+.login {
+    width: 100%;
+    height: 100%;
+    background: url("../../images/login-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    color: #ffffff;
+}
+.login .login-container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login .login-container .user-name,
+.login .login-container .password {
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    width: 100%;
+    background: transparent;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.login .login-container .user-name {
+    margin-bottom: 30px;
+}
+.login .login-container .user-name input,
+.login .login-container .password input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.login .login-container .user-name input:focus,
+.login .login-container .password input:focus {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.login .login-container .remember-me {
+    margin-top: 15px;
+    font-weight: normal;
+    margin-left: 40px;
+}
+.login .login-container .remember-me span {
+    position: relative;
+    top: -2px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.login .login-container .remember-me input {
+    display: none;
+}
+.login .login-container .remember-me .fa {
+    width: 14px;
+}
+.login .login-container .sign-in-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+.login .login-container .sign-in-btn button {
+    background-color: #ffffff;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    color: #00AFF0;
+    width: 100px;
+    font-size: 14px;
+    margin-left: calc((100% - 100px) / 2);
+    outline-width: 0;
+}
+.login .login-container .link {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+.login .login-container .link a {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login .login-container .link a.forgot-password-link {
+    margin-left: 30px;
+}
+/* ------------- LOGIN PAGE --- END ---- */
+
+/* ------------- REGISTER PAGE --- START ---- */
+.register {
+    width: 100%;
+    height: 100%;
+    background: url("../../images/register-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    color: #515D70;
+}
+.register .register-container .register-header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.register .register-container .register-header span {
+    color: #22A2DD;
+    font-size: 20pt;
+}
+.register .note {
+    font-size: 11px;
+    color: #A9B0C4;
+}
+@media (min-width: 600px) {
+  .register .register-container .captcha .captcha-content,
+  .register .register-container .full-name,
+  .register .register-container .password {
+      display: inline-block;
+  }
+  .register .register-container .email,
+  .register .register-container .re-password {
+      display: inline-block;
+      margin-left: 56px;
+  }
+}
+@media (max-width:600px) {
+  .register .register-container .email .input-bordered,
+  .register .register-container .password .input-bordered{
+      width: 75%;
+      margin-top: 10px;
+  }
+  .register .register-container .re-password .input-bordered{
+      width: 75%;
+      margin-top:15px;
+  }
+  .register .register-container .captcha .captcha-content,
+  .register .register-container .full-name .input-bordered,
+  .register .register-container .captcha .input-bordered{
+      width: 75%;
+  }
+  .note{
+    left: 15%;
+    position: relative;
+    width: 70%;
+  }
+  .captcha-content,
+  .input-bordered{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .register .register-container .register-header,
+  .register .register-container .submit-btn button{
+    left: 13%;
+    position: relative;
+  }
+
+}
+.register .register-container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.register .register-container .email-name-group {
+    width: 100%;
+}
+.register .register-container .email-name-group .email {
+    float: right;
+}
+.register .register-container .user-name .input-bordered {
+    width: 75%;
+    margin-top: 10px;
+}
+.register .register-container .password-group {
+    width: 100%;
+    margin-top: 10px;
+}
+.register .register-container .password-group .re-password {
+    float: right;
+}
+.register .register-container .password-group .note {
+    margin-top: 2px;
+}
+.register .register-container .submit-btn button {
+    background: #7ABA45;
+    color: #ffffff;
+}
+.register .register-container .link {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.register .register-container .link a {
+    color: #22A2DD;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.register .register-container .link a.forgot-password-link {
+    margin-left: 30px;
+}
+.register .register-container .captcha {
+    margin-bottom: 20px;
+}
+.register .register-container .captcha .refresh-captcha {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+}
+.register .register-container .captcha .refresh-captcha img {
+    cursor: pointer;
+}
+/* ------------- REGISTER PAGE --- END ---- */
+/* ------------- FORGOT PASSWORD PAGE --- START ---- */
+.forgot-password {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    color: #515D70;
+    background: #f8f7f5;
+}
+.forgot-password .forgot-password-container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.forgot-password .forgot-password-container .note,
+.forgot-password .forgot-password-container .small-note {
+    width: 100%;
+}
+.forgot-password .forgot-password-container .forgot-icon {
+    margin-bottom: 20px;
+}
+.forgot-password .forgot-password-container .note {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.forgot-password .forgot-password-container .small-note {
+    font-size: 12pt;
+    margin-bottom: 40px;
+}
+.forgot-password .forgot-password-container .input-bordered {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.forgot-password .forgot-password-container .send-btn button {
+    width: 80px;
+    background: #22A2DD;
+    color: #ffffff;
+}
+.forgot-password .forgot-password-container .link {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.forgot-password .forgot-password-container .link a {
+    color: #515D70;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.forgot-password .forgot-password-container .link a.login-link {
+    margin-left: 30px;
+}
+/* ------------- FORGOT PASSWORD PAGE --- END ---- */
+/* ------------- ACTIVE PAGE --- START ---- */
+.active-page {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    color: #515D70;
+    background: url("../../images/register-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.active-page .active-page-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.active-page .active-page-container p.text {
+    font-size: 16pt;
+    font-weight: bold;
+}
+.active-page .active-page-container .fa {
+    font-size: 60pt;
+}
+.active-page .active-page-container .not-success .fa {
+    color: #E83D35;
+}
+.active-page .active-page-container .active-success .fa {
+    color: #7ABA45;
+}
+.active-page .active-page-container .link {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.active-page .active-page-container .link a {
+    color: #22A2DD;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* ------------- ACTIVE PAGE --- END ---- */
+
+/* ------------- PROFILE PAGE --- START ---- */
+.user-profile {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.user-profile .information {
+    width: 100%;
+    float: left;
+    display: block;
+    position: relative;
+}
+.user-profile .note {
+    font-size: 10pt;
+    color: #A9B0C4;
+    margin-bottom: 0;
+}
+.user-profile .edit {
+    padding: 3px 5px;
+    border-radius: 50%;
+    background-color: #22A2DD;
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+.user-profile .form-group {
+    width: 100%;
+    float: left;
+    position: relative;
+    display: block;
+}
+.user-profile .profile-label {
+    width: 120px;
+    float: left;
+    position: absolute;
+    margin-bottom: 0;
+    top: 5px;
+}
+.user-profile .content {
+    width: calc(100% - 120px);
+    float: right;
+}
+.user-profile .content .chosen-single {
+    border: 0;
+    border-radius: 0;
+    background-color: #ECF0F1;
+    box-shadow: none;
+    border-bottom: 1px solid #515D70;
+    padding: 0 40px 0 5px;
+    height: 30px;
+}
+.user-profile .profile-picture {
+    width: 100%;
+}
+.user-profile .profile-picture img {
+    width: 200px;
+    display: block;
+}
+.user-profile .profile-picture .btn-change-avatar {
+    width: 200px;
+    color: #ffffff;
+    background-color: #22A2DD;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+}
+.user-profile .profile-picture .btn-change-avatar:focus {
+    outline: none !important;
+}
+.user-profile .section-header {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #FBB92F;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.user-profile input {
+    outline: none;
+    border-radius: 0;
+}
+.user-profile .seperator {
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.user-profile .user-name {
+    font-size: 20pt;
+    color: #ffffff;
+}
+.user-profile .edit-profile {
+    padding: 0;
+}
+.user-profile .profile {
+}
+.user-profile .password {
+}
+.user-profile .avatar {
+    height: 100%;
+    margin-bottom: 20px;
+}
+.user-profile .avatar .fa-user {
+    color: white;
+    font-size: 100pt;
+}
+.user-profile .avatar:hover .drop-box {
+    display: block;
+}
+.user-profile .drop-box:hover {
+    display: block;
+}
+.user-profile .drop-box {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    width: calc(100% - 30px);
+    color: #ffffff;
+    padding-top: 5px;
+    display: none;
+}
+.user-profile .drop-box i.fa {
+    margin-right: 10px;
+}
+.user-profile .dragover {
+    border: 5px dashed #6FC5D2;
+}
+.user-profile .time-zone .chosen-container {
+    width: 100% !important;
+}
+.user-profile .time-zone .chosen-container .chosen-single {
+    border-radius: 0;
+}
+.user-profile .profile-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.user-profile .profile-close:hover{
+  top: 7px;
+  right: 7px;
+  font-size: 30px;
+}
+/* ------------- PROFILE PAGE --- END ---- */

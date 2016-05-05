@@ -1,0 +1,35 @@
+.dsm-mention {
+    position: fixed;
+    max-height: 200px;
+    display: inline-block;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #808080;
+}
+.dsm-mention-item {
+    min-height: 30px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.dsm-mention-item.focus-member {
+    background: #dcdcdc;
+    border: none;
+}
+.dsm-mention-item:hover {
+    background: #dcdcdc;
+}
+.dsm-mention-item .avatar {
+    margin-top: 2px;
+    border-radius: 50%;
+    float: left;
+}
+.dsm-mention-item .full-name {
+    margin-top: 3px;
+    float: left;
+    font-size: 10pt;
+    color: #31738d;
+    margin-left: 10px;
+}

@@ -1,0 +1,56 @@
+﻿<!--BEGIN TOPBAR-->
+<div menu-collapsed sidemenu-collapsed="vm.menuStatus" search-collapsed="vm.searchStatus" class="header-bar">
+    <nav role="navigation">
+        <div class="logo">
+            <a href="index.html">
+                <img src="style/icon/logo.png" alt="JANETO ICT">
+            </a>
+        </div>
+        <div class="glyphicon-icon">
+            <div class="left-icon">
+                <span ng-click="vm.menuClick()" class="hidden-xs header-bar-icon glyphicon glyphicon-menu-hamburger"></span>
+            </div>
+            <div class="left-icon div-input-search">
+                <input class="input-search" type="text" name="search" placeholder="Search..." ng-model="vm.searchContent" ng-blur="vm.searchClick()">
+                <span class="header-bar-icon glyphicon glyphicon-search" ng-click="vm.searchClick()"></span>
+            </div>
+            <div class="right-icon">
+                <a ng-click="vm.logout()"><span class="login-icon header-bar-icon glyphicon glyphicon-log-in"></span></a>
+            </div>
+            <!-- <span class="glyphicon glyphicon-log-out"></span> -->
+        </div>
+    </nav>
+</div>
+<!--END TOPBAR-->
+<div class="div-sidemenu-content">
+    <!--BEGIN SIDEBAR MENU-->
+    <div class="div-sidemenu">
+        <div class="div-project-title">
+            <span class="project-title">Training</span>
+            <span class="project-title">Tools</span>
+        </div>
+        <div class="div-navigation">
+            <nav role="navigation">
+                <ul class="sidemenu">
+                    <li ng-repeat="name in vm.menuName" ng-class="vm.active[$index]" ng-click="vm.changeSelectedElementMenu($index)" ng-mouseover="vm.activeMenu($index)" ng-mouseleave="vm.removeActiveMenu($index)">
+                        <a ui-sref="{{vm.menuRef[$index]}}">
+                            <span ng-class="vm.menuIcon[$index]"></span>
+                            <span class="hidden-xs menu-title">{{name}}</span>
+                        </a>
+                    </li>                                     
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--END SIDEBAR MENU-->
+    <!--BEGIN PAGE WRAPPER-->
+    <div class="page-wrapper">
+        <!--BEGIN CONTENT-->
+        <div ui-view class="ui-view-wrapper-content"></div>
+        <!--END CONTENT-->
+    </div>
+    <!--END PAGE WRAPPER-->
+</div>
+<footer>
+    <div>2016 © Training Tools - JANETO ICT</div>
+</footer>

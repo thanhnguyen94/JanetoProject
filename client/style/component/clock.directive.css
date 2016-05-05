@@ -1,0 +1,91 @@
+.widget-clock .digital {
+  text-align: center
+}
+.widget-clock .time {
+  font-family: helveticaneueRegular, Helvetica;
+  font-size: 2.5em;
+  margin: 0
+}
+.widget-clock .square {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%
+}
+.widget-clock svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0
+}
+.widget-clock .clock-face {
+  stroke: #333;
+  fill: #fff
+}
+.widget-clock .minor {
+  stroke: #999;
+  stroke-width: .5
+}
+.widget-clock .major {
+  stroke: #333;
+  stroke-width: 1
+}
+.widget-clock .hour {
+  stroke: #333
+}
+.widget-clock .minute {
+  stroke: #666
+}
+.widget-clock .second {
+  stroke: #1076ed
+}
+.widget-clock .second-counterweight {
+  stroke: #1076ed;
+  stroke-width: 3
+}
+.widget-clock.dark .clock-face {
+  fill: #111
+}
+.widget-clock.dark .hour {
+  stroke: #666
+}
+.widget-clock.dark .minute {
+  stroke: #999
+}
+.memberlist-panel .widget-clock.group-member-clock .analog {
+  width: 70px;
+}
+.memberlist-panel .widget-clock.group-member-clock .digital {
+  text-align: center;
+  display: inline-block;
+}
+.memberlist-panel .widget-clock.group-member-clock .time {
+  text-align: left;
+  float: left;
+  font-family: helveticaneueRegular, Helvetica;
+  font-size: 11px;
+  margin-right: 10px;
+}
+.header .header-logo .widget-clock.clock-header {
+  margin-bottom: 3px;
+  display: inline;
+  font-size: 11pt;
+  line-height: 11pt;
+  color: #C7C8C7;
+}
+.header .header-logo .widget-clock.clock-header .digital {
+  text-align: center;
+  display: inline-block;
+}
+.header .header-logo .widget-clock.clock-header .digital .time {
+  font-size: 11px;
+  text-align: left;
+  font-family: helveticaneueRegular, Helvetica;
+}
+.header .header-logo .widget-clock.clock-header .gmt-info {
+  font-size: 11px;
+  display: inline-block;
+  text-align: right;
+  font-family: helveticaneueRegular, Helvetica;
+  margin-left: 5px;
+}

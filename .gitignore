@@ -1,0 +1,12 @@
+node_modules/*
+client/bower_components/*
+.settings/
+client/upload/images/*
+client/avatar/*.*
+client/index.html
+resource/
+.idea/
+docs/
+nbproject/
+typings/
+build/

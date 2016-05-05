@@ -1,0 +1,38 @@
+<div class="panel panel-blue">
+    <div class="panel-heading">Create Teacher</div>
+    <div class="panel-body pan">
+        <form class="form" name = "myform" method="POST" id="myform">
+            <div class="form-body pal">
+                <div class="form-group">
+                    <label  class="control-label">Name Teacher
+                            <span class='require'>*</span></label>
+                    <div class="input-icon right"><i class="fa fa-user"></i>
+                       
+                        <input id="inputName" type="text" placeholder="Username" class="form-control" ng-model= 'vm.username'/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for = "#inputEmail" class=" control-label">Email
+                            <span class='require'>*</span></label>
+                    <div class="input-icon right"><i class="fa fa-envelope"></i>
+                        
+                        <input id="inputEmail" type="text" placeholder="Email address" class="form-control" ng-model= 'vm.email'/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for = "#p" class="control-label">Password</label>
+                    <div class="input-icon right"><i class="fa fa-lock"></i>                       
+                        <input type='text' id='p' disabled="true" class="form-control" ng-model='vm.password' />
+                        <br/>
+
+                    </div>
+
+                </div>
+                
+                <div class="form-group text-right pal">
+                    <button type="submit" id="test" class="btn btn-primary" ng-click="vm.addTeacher()">Submit</button>
+                </div>
+
+        </form>
+        </div>
+</div>

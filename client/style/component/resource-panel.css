@@ -1,0 +1,480 @@
+/* --------- RESOURCE PANEL --- START --- */
+.resource-panel, .memberlist-panel, .todo-panel {
+    width: 100%;
+    height: 100%;
+    background: #E9E9E9;
+    float: right;
+    position: relative;
+}
+.resource-panel .listResource {
+    height: calc(100% - 45px - 144px);
+    margin-top: 144px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.resource-panel .header {
+    width: 100%;
+    z-index: 999;
+    height: 144px;
+}
+.resource-panel .header .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 0;
+}
+.resource-panel .header dsm-group-avatar {
+    margin-left: 25px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.resource-panel .header dsm-group-avatar .dsm-group-avatar {
+    margin-right: 0;
+}
+.resource-panel .header .room-name {
+    color: #515D70;
+    font-size: 16px;
+    margin-left: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 25px - 50px - 25px);
+    float: right;
+    margin-top: calc(25px + 50px/2 - 27px/2);
+}
+.resource-panel .header .tabs {
+    width: 100%;
+    color: #00AFF0;
+    position: absolute;
+    bottom: 0;
+}
+.resource-panel .header .tabs .tab-group {
+    font-size: 13px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+.resource-panel .header .tabs .tab-private {
+    font-size: 13px;
+    margin-left: 43px;
+    cursor: pointer;
+}
+.resource-panel .header .view-mode {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+.resource-panel .header .big {
+    padding: 5px 1px 0 0;
+}
+.resource-panel .header .small {
+    padding: 7px 5px 4px 4px;
+}
+.resource-panel .header .big, .resource-panel .header .small {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right;
+}
+.resource-panel .header .big.active, .resource-panel .header .small.active {
+    border-radius: 50%;
+    background-color: #25A1DB;
+}
+
+.resource-panel .listResource .group {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 25px;
+}
+.resource-panel .listResource .group-range {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #FBB92F;
+    margin-bottom: 0;
+}
+/*List thumbnail view*/
+.resource-panel .list-thumbnail .resource {
+    color: #515D70;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 5px;
+    width: 105px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.resource-panel .list-thumbnail .resource p {
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 9pt;
+}
+.resource-panel .list-thumbnail .resource .remove{
+    white-space: nowrap;
+    width: 5px;
+    text-align: center;
+    color: #C7C6C7;
+    margin-right: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+}
+
+.resource-panel .list-thumbnail .resource .remove:hover{
+    color: black;
+    margin-right: 6px;
+    top: 0;
+    font-size: 20px;
+}
+
+.resource-panel .list-thumbnail .resource:hover {
+    box-shadow: 0 0 5px 2px #C7C6C7;
+    background: #FCFCFC;
+}
+
+.resource-panel .list-thumbnail .resource:hover p {
+    color: #515D70;
+}
+/*List detail view*/
+.resource-panel .list-detail .resource {
+    color: #515D70;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #515D70;
+    font-size: 9pt;
+}
+.resource-panel .list-detail .resource .image {
+    width: 40px;
+    float: left;
+    margin-left: 3px;
+}
+.resource-panel .list-detail .resource span.name {
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    width: calc(100% - 60px - 40px - 30px);
+    margin-left: 5px;
+}
+.resource-panel .list-detail .resource span.size {
+    margin-top: 5px;
+    white-space: nowrap;
+    float: right;
+    width: 60px;
+    text-align: center;
+    color: #C7C6C7;
+}
+.resource-panel .list-detail .resource .remove {
+    margin-top: 5px;
+    white-space: nowrap;
+    width: 5px;
+    text-align: center;
+    color: #C7C6C7;
+    margin-right: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.resource-panel .list-detail .resource .remove:hover {
+    color: black;
+    margin-top: 2px;
+    margin-right: 6px;
+    font-size: 20px;
+}
+
+.resource-panel .list-detail .resource pull-right {
+    float: right;
+}
+
+
+.resource-panel .list-detail .resource:hover {
+    box-shadow: 0 0 5px 2px #C7C6C7;
+    background: #FCFCFC;
+}
+
+.resource-panel .search-bar {
+    position: absolute;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    z-index: 999;
+    border-radius: 10px;
+    background-color: #C7C8C7;
+    height: 32px;
+    bottom: 9px;
+}
+
+.resource-panel .search-bar input {
+    border-style: solid;
+    padding: 6px 5px 6px 10px;
+    width: calc(100% - 90px);
+    float: left;
+    border-color: transparent;
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    border-width: 2px 0px;
+    color: white;
+}
+.resource-panel .search-bar input::-webkit-input-placeholder{
+    color: white;
+}
+.resource-panel .search-bar input:focus {
+    outline-width: 0;
+}
+.resource-panel .search-bar .btn-search {
+    background-color: transparent;
+    color: white;
+    float: left;
+    padding: 7px 11px;
+}
+.listResource.detail {
+    padding: 10px;
+}
+.listResource.detail .btn {
+    margin-right: 5px;
+    border-radius: 0;
+    border: 1px solid #31738d;
+    background-color: #A0DBF2;
+}
+.listResource.detail .btn:hover {
+    background-color: #31738d;
+    color: #ffffff;
+}
+.listResource.detail .text {
+    font-size: 16pt;
+    margin-top: 20px;
+}
+.listResource.detail .text .video-content video {
+    width: 100%;
+}
+.listResource.detail .text img {
+    max-width: 300px;
+}
+.listResource.list.list-thumbnail img {
+    height: 45px;
+}
+.listResource.list.list-detail img {
+    height: 30px;
+    max-width: 40px;
+}
+
+.listResource.dragover {
+    border: 5px dashed #6FC5D2;
+}
+
+.resource-panel .upload-process {
+    position: absolute;
+    bottom: 0;
+    width: calc(100%);
+}
+.resource-panel .upload-process .progress {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/*---START Popup view resource content ---*/
+.view-file-backdrop.in {
+    background-color: rgba(0, 20, 50, 0.6);
+    opacity: 1;
+}
+.view-file .modal-content {
+    border-radius: 30px 30px 0 0;
+}
+.view-file .modal-header {
+    padding: 10px 10px 10px 30px;
+}
+.view-file .modal-header .download-button {
+    width: 30px;
+    height: 30px;
+    background-color: #25A1DB;
+    border-radius: 50%;
+    color: #F7F6F5;
+    float: right;
+    cursor: pointer;
+    padding: 6px 8px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.view-file .modal-header .download-button:hover {
+    color: #515D70;
+}
+.view-file .modal-header img {
+    cursor: pointer;
+    height: 21px;
+    width: 21px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.view-file .modal-header .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.view-file .modal-header .file-info {
+    margin-left: 10px;
+    display: inline-block;
+}
+.view-file .modal-header .name {
+    font-weight: bold;
+    font-size: 12pt;
+    color: #515D70;
+    margin-bottom: 0;
+}
+.view-file .modal-header .resource-name {
+    font-size: 10pt;
+    color: #B8B8C1;
+    margin-bottom: 0;
+}
+
+.view-file .modal-body {
+    padding: 0;
+    background: transparent;
+}
+.view-file .modal-body .image-content,
+.view-file .modal-body .video-content,
+.view-file .modal-body .audio-content {
+    width: 100%;
+}
+.view-file .modal-body .video-content video, .view-file .modal-body .audio-content audio {
+    width: 100%;
+}
+.view-file .modal-body .other-file-content {
+    height: 200px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.view-file .modal-body .other-file-content img {
+    height: 100%;
+}
+.view-file .modal-body .navigation {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+}
+.view-file .modal-body .navigation .next-btn {
+    right: -100px;
+    position: absolute;
+    cursor: pointer;
+}
+.view-file .modal-body .navigation .previous-btn {
+    left: -100px;
+    position: absolute;
+    cursor: pointer;
+}
+@media (max-height: 700px) {
+    .view-file .modal-dialog {
+        margin-top: 100px;
+    }
+}
+@media (max-height: 900px) and (min-height: 701px) {
+    .view-file .modal-dialog {
+        margin-top: 200px;
+    }
+}
+@media (max-height: 1100px) and (min-height: 701px) {
+    .view-file .modal-dialog {
+        margin-top: 200px;
+    }
+}
+@media (min-height: 1101px) {
+    .view-file .modal-dialog {
+        margin-top: 300px;
+    }
+}
+/*---END Popup view resource content ---*/
+/*Start Calendar*/
+.resource-panel .search-bar .btn-calendar {
+    background-color: transparent;
+    color: white;
+    float: left;
+    padding: 0 11px;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.resource-panel .search-bar .btn-calendar img {
+    width: 20px;
+    margin-bottom: 2px;
+}
+.custom-date-picker {
+    border-radius: 15px;
+    background: #F7F6F5;
+    width: 355px;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+}
+.custom-date-picker.dropup:after, .custom-date-picker.dropup:before {
+    display: none;
+}
+.custom-date-picker .ranges {
+    float: right !important;
+    width: 100% !important;
+}
+.custom-date-picker .range_inputs {
+    float: right;
+}
+.custom-date-picker .range_inputs .daterangepicker_start_input,
+.custom-date-picker .range_inputs .daterangepicker_end_input {
+    display: none;
+}
+.custom-date-picker .calendar-date {
+    background: #F7F6F5;
+}
+.custom-date-picker .calendar {
+    max-width: none;
+}
+.custom-date-picker th {
+    color: #515D70;
+    font-weight: normal;
+}
+.custom-date-picker th.month {
+    color: #7ABA45;
+}
+.custom-date-picker th.month select, .custom-date-picker th.month select:focus {
+    border: 1px solid #C7C8C7;
+    border-radius: 10px;
+    background: #F7F6F5;
+    outline: none;
+}
+.custom-date-picker th, .custom-date-picker .calendar td {
+    min-width: 48px;
+}
+.custom-date-picker .calendar td.available {
+    color: #515D70;
+}
+.custom-date-picker .calendar td.available.off {
+    color: #C7C8C7;
+}
+.custom-date-picker .calendar td.active {
+    background-color: #7ABA45;
+    border-color: #7ABA45;
+    color: #F7F6F5;
+}
+.date-range-picker-apply, .date-range-picker-cancel {
+    height: 34px;
+    width: 80px;
+    border-radius: 17px;
+    color: #ffffff;
+}
+.date-range-picker-apply:hover, .date-range-picker-cancel:hover {
+    color: #ffffff;
+}
+.date-range-picker-apply {
+    background: #286090;
+}
+.date-range-picker-cancel {
+    background: #C7C6C6;
+}
+
+/*End Calendar*/
+/* --------- RESOURCE PANEL --- END --- */

@@ -1,0 +1,58 @@
+{
+  "name": "dsm",
+  "version": "0.0.0",
+  "authors": [
+    "Nguyen Minh Thang"
+  ],
+  "description": "",
+  "main": "./views/index.ejs",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular-bootstrap": "~0.13.0",
+    "angular-markdown-filter": "~1.3.2",
+    "angular-route": "~1.4.3",
+    "angular-sanitize": "~1.4.1",
+    "angular-scroll-glue": "~2.0.6",
+    "angular-slimscroll": "~1.1.3",
+    "angular-spinner": "~0.7.0",
+    "angular-timezone-selector": "*",
+    "angular-ui-router": "~0.2.15",
+    "angular-ui-select": "~0.12.1",
+    "bootstrap": "~3.3.6",
+    "chosen": "~1.4.2",
+    "d3": "~3.5.12",
+    "jquery": "~2.1.4",
+    "jquery.easing": "~1.3.1",
+    "lodash": "~4.0.1",
+    "moment-timezone": "~0.4.0",
+    "ng-context-menu": "~1.0.1",
+    "ng-file-upload-shim": "~9.1.2",
+    "ng-table": "~0.8.0",
+    "ng-tags-input": "3.0.0",
+    "ngstorage": "~0.3.7",
+    "perfect-scrollbar": "~0.5.1",
+    "socket.io-client": "~1.3.7",
+    "toastr": "~2.1.1",
+    "angular-daterangepicker": "~0.1.17",
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.6.0",
+    "animate.css": "~3.5.1",
+    "font-awesome": "~4.5.0",
+    "bootstrap-css-only": "~3.3.5",
+    "markdown-it-emoji": "~1.1.0",
+    "markdown-it-for-inline": "~0.1.1",
+    "markdown-it": "~5.1.0",
+    "filesaver": "*",
+    "angular-audio": "~1.7.1"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": "css/font-awesome.min.css"
+    }
+  },
+  "resolutions": {
+    "angular": "~1.4.3",
+    "moment": "~2.10.6"
+  }
+}

@@ -1,0 +1,22 @@
+<div class="popup-header modal-header">
+    <h3 class="modal-title">{{vm.header}}</h3>
+</div>
+<div class="popup-body modal-body">
+    <div class="popup-body-title">
+        {{vm.bodyTitle}}
+    </div>
+    <ul class="popup-body-content">
+        <li ng-repeat="(key, value) in vm.bodyContent">
+            <div class="content-key">{{key}}:</div>
+            <div class="content-value">{{value}}</div>
+        </li>
+    </ul>
+    <div ng-if="vm.reasonBox" class="popup-reason">
+        <label for="reason">Reason:</label>
+        <input type="text" name="reason" ng-model="vm.reason">
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" type="button" ng-click="vm.funcBtnOK()">{{vm.nameBtnOK}}</button>
+    <button class="btn btn-warning" type="button" ng-click="vm.funcBtnCancel()">{{vm.nameBtnCancel}}</button>
+</div>
